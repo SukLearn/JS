@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-image: url("https://www.ie.edu/insights/wp-content/uploads/2020/10/Hindi-Art-for-Busniness-Leaders.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  background-color: #fff;
+  width: 80vmin;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  padding: 40px 20px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+span {
+  position: relative;
+  font-size: 22px;
+  bottom: 2px;
+}
+
+.opt-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px 0;
+}
+
+button {
+  background-color: #0b8311;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 15px 0 15px;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 100px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: none;
+}
+
+.gridCol {
+  height: 1em;
+  width: 1em;
+  border: 1px solid #ddd;
+}
+
+.gridRow {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .gridCol {
+    height: 0.8em;
+    width: 0.8em;
+  }
+}
+
+.container {
+  position: relative;
+  left: 13%;
+  margin-top: 50px;
+}
+
+#width-range,
+#height-range {
+  cursor: pointer;
+}

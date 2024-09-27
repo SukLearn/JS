@@ -1,0 +1,25 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: tomato;
+  height: 100vh;
+
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+
+  font-style: normal;
+}
+
+.container {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}

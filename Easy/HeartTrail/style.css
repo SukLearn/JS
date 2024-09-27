@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #000000;
+  overflow: hidden;
+}
+div {
+  background: url("./heart.png");
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  animation: above 2s forwards;
+  -webkit-animation: above 2s forwards;
+}
+@keyframes above {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    filter: hue-rotate(0);
+    -webkit-filter: hue-rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -500%);
+    opacity: 0;
+    -webkit-transform: translate(-50%, -500%);
+    -moz-transform: translate(-50%, -500%);
+    -ms-transform: translate(-50%, -500%);
+    -o-transform: translate(-50%, -500%);
+    filter: hue-rotate(90deg);
+    -webkit-filter: hue-rotate(1080deg);
+  }
+}
