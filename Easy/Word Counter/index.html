@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>word counter</title>
+  </head>
+  <body>
+    <div class="container">
+      <p class="title">Real-Time Character Counter</p>
+      <textarea
+        name=""
+        id="textarea"
+        maxlength="50"
+        placeholder="write your text here..."
+      ></textarea>
+      <div class="text">
+        <p class="total">Total Character: <span class="totalCount">0</span></p>
+        <p class="remaining">
+          Remaining: <span class="remainingCount">50</span>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

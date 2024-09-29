@@ -1,0 +1,40 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: tomato;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+}
+.container {
+  font-weight: bold;
+  background-color: #ff8282;
+  padding: 25px;
+  position: relative;
+  font-size: 20px;
+}
+.total {
+  display: inline-block;
+}
+.remaining {
+  float: right;
+  padding: 0 5px;
+}
+.remainingCount {
+  color: red;
+}
+textarea {
+  padding: 10px;
+  resize: none;
+  border: 1px solid darkgrey;
+  font-size: 20px;
+  width: calc(100% - 25px);
+  height: 100px;
+}
