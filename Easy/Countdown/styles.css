@@ -1,0 +1,94 @@
+@font-face {
+  font-family: Roboto Medium;
+  src: url(fonts/Roboto-Medium.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto Light;
+  src: url(fonts/Roboto-Light.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: Roboto Bold;
+  src: url(fonts/Roboto-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: Roboto Normal;
+  src: url(fonts/Roboto-Regular.ttf) format(truetype);
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 300px);
+  width: 100vw;
+  background-color: #0099ff;
+  color: #ffffff;
+  font-family: Roboto Medium;
+}
+h1 {
+  text-align: center;
+  letter-spacing: 8px;
+}
+.countDown-title {
+  text-align: center;
+  display: block;
+  font-size: 4rem;
+}
+.time-table-title {
+  display: flex;
+  justify-content: center;
+  width: 100vh;
+  padding: 50px;
+  font-size: 4rem;
+}
+
+.time-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+  margin: 30px;
+  font-size: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.time-table div {
+  font-size: 1em;
+  margin: 0 25px;
+  position: relative;
+  text-align: center;
+  width: 100px;
+}
+.time-table div::before {
+  content: "";
+  position: absolute;
+  font-size: 0.35em;
+  line-height: 35px;
+  bottom: -30px;
+  left: 5px;
+  font-family: Roboto Light;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+}
+.time-table .days::before {
+  content: "Days";
+}
+.time-table .hours::before {
+  content: "Hours";
+}
+.time-table .minutes::before {
+  content: "Minutes";
+}
+.time-table .seconds::before {
+  content: "Seconds";
+}
