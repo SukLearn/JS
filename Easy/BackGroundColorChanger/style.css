@@ -1,0 +1,67 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  min-height: 100vh;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* color: white; */
+  /* background-color: black; */
+}
+h1 {
+  text-align: center;
+}
+p {
+  font-size: 2rem;
+}
+.snapItem {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  font-size: 2rem;
+}
+.last {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+}
+.last button {
+  color: white;
+  background-color: #1d1d1d;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 2rem;
+  border: none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BackGround</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="last"><button id="lastProject">last</button></div>
+      <section id="section1" class="snapItem">
+        <div>
+          <h1>background Color Changer</h1>
+          <input type="color" id="color" value="#000000" />
+          <p>Current Color: <span id="colorValue"></span></p>
+        </div>
+      </section>
+      <section id="section2" class="snapItem">
+        <div>
+          <h1>Dynamically updating text</h1>
+          <input type="text" name="dynamic" id="dynamic" autocomplete="off" />
+          <p>
+            text:
+            <span id="dynamicText"></span>
+          </p>
+        </div>
+      </section>
+      <section id="section3" class="snapItem">
+        <div>
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="UsernameInput"
+            placeholder="Enter Username"
+            autocomplete="off"
+          />
+          <p id="usernameTest">
+            your Username was: <span id="username"></span>
+          </p>
+          <!-- bad approach because html must contain only html code -->
+          <button id="submit" onclick="handleSubmit()">submit</button>
+          <!-- good approach -->
+          <button id="otherSubmit">Other submit</button>
+          <!-- best approach -->
+          <button id="bestSubmit">best submit</button>
+        </div>
+      </section>
+      <section id="section4" class="snapItem">
+        <h1 id="project4Name">Counter</h1>
+        <p id="value4"></p>
+        <button id="plus4">add</button>
+        <button id="reset4">reset</button>
+        <button id="minus4">decrease</button>
+      </section>
+      <section id="section5" class="snapItem">
+        <h1>Random Number Generator</h1>
+        <p id="number5">0</p>
+
+        <button id="generate5">Generate Number</button>
+      </section>
+      <section id="section6" class="snapItem">
+        <h1>Guess Game</h1>
+
+        <input type="number" name="guess6" id="guess6" />
+        <button id="button6">guess</button>
+        <p id="guessed6"></p>
+      </section>
+      <section id="section7" class="snapItem">
+        <h1>Temperature Conversion</h1>
+        <label for="Celsius">Celsius</label
+        ><input type="number" name="Celsius" id="Celsius" />
+        <label for="fahrenheit">Fahrenheit</label
+        ><input type="number" name="fahrenheit" id="fahrenheit" />
+      </section>
+
+      <section id="section8" class="snapItem">
+        <p id="password"></p>
+        <div>
+          <label for="includeLowerCase"
+            >Low:
+
+            <input type="checkbox" id="LowerCase" name="includeLowerCase" />
+          </label>
+        </div>
+
+        <div>
+          <label for="includeUpperCase"
+            >Upp:
+
+            <input type="checkbox" id="UpperCase" name="includeUpperCase" />
+          </label>
+        </div>
+        <div>
+          <label for="number8"
+            >numb:
+
+            <input type="checkbox" id="number8" name="number8" />
+          </label>
+        </div>
+        <div>
+          <label for="character8"
+            >:character8
+
+            <input type="checkbox" id="character8" name="character8" />
+          </label>
+        </div>
+        <button id="button8">Generate Password</button>
+      </section>
+      <section id="section9" class="snapItem">
+        <h1>Digital Clock</h1>
+        <div>
+          <p id="clock"></p>
+        </div>
+      </section>
+      <section id="section10" class="snapItem">
+        <h1>Pokemon API</h1>
+        <input type="text" id="fetchValue" placeholder="Pikachu" />
+        <button id="apiButton">Submit</button>
+        <p id="information"></p>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
