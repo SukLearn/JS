@@ -10,29 +10,20 @@
     <div class="container">
       <h1 class="title">ToDoList with Local Storage</h1>
       <div class="input-wrapper">
-        <form action="" method="post">
-          <input
-            type="text"
-            name=""
-            id="task__input"
-            placeholder="Enter your Task here"
-          />
-        </form>
+        <input
+          autofocus
+          type="text"
+          id="task__input"
+          placeholder="Enter your Task here"
+          autocomplete="off"
+          class="task__input"
+        />
       </div>
-      <div class="container__tasks">
-        <ul>
-          <li>buy milk</li>
-          <li>buy lemon</li>
-        </ul>
-      </div>
-      <!-- <div class="Container__checked__tasks">
-        <button class="btn">Accomplished Tasks</button>
-        <ul>
-          <li>buy milk</li>
-          <li>buy lemon</li>
-        </ul>
-      </div> -->
+      <ul class="container__tasks"></ul>
+      <button class="btn">Accomplished Tasks</button>
+      <ul class="container__accomplish"></ul>
     </div>
+    <div class="total">Tasks Done: 0</div>
     <script src="script.js"></script>
   </body>
 </html>
